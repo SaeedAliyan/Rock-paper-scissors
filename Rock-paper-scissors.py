@@ -7,7 +7,7 @@ choices = ['rock','paper','scissord']
 game_role = {
     "rock" : "scissord" , #rock is win 
     "Paper" : "rock", #Paper is win 
-    "scissord" : "rock" #scissord is win 
+    "scissors" : "rock" #scissord is win 
 }
 computer_score_coefficient = 0
 user_score_coefficient = 0
@@ -70,10 +70,10 @@ pleae write your choice : """)
 
     #check winner and break the loop
     #winner who is have over 50 point or win 5 time 
-    if computer_score >= 2 or computer_score_coefficient == 5:
+    if computer_score >= 50 or computer_score_coefficient == 5:
         print("computer Win !!!!")
         finish=True
-    if user_score >= 2 or user_score_coefficient == 5:
+    if user_score >= 50 or user_score_coefficient == 5:
         print('user Win *********!')
         finish=True
 
